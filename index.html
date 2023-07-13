@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROULETTE</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="wheel.png">
+
+</head>
+
+
+<body>
+  <div class="image-container">
+    
+    <audio id="background-music" src="/former-102685.mp3" autoplay loop></audio>
+    <audio id="spin-audio" src="/roulette-sound.mp3"></audio>  
+  </div>
+  
+  <img class="casino" src="/casino.png" alt="">
+  <img class="girl" src="/girl.png" alt="">
+
+  <div class="wager-container">
+
+    <div>
+      <label for="bet-amount">Bet Amount: $</label>
+      <input type="number" id="bet-amount" min="1">
+      <label for="bet-color">Bet Color:</label>
+      <select id="bet-color">
+        <option value="red">Red</option>
+        <option value="black">Black</option>
+        <option value="green">Green</option>
+      </select>
+      <button class="place-bet">Place Bet</button>
+    </div>
+    <div class="display-message">
+      <p id="balance">Current Balance: $100</p>
+      <p id="bet-info"></p>
+      <p id="outcome"></p>
+      <p id="win-lose"></p>
+    </div>
+    
+
+  </div>
+  
+  <h1 id="result" class="result"></h1>
+
+  <div id="app" class="app">
+    <img class="wheel" src="/pngwing.com (4).png" alt="">
+  </div>
+
+  <div class="button-container">
+    <img class="button" src="button.png" alt="">
+  </div>
+
+  <img class="girl-2" src="pngwing.com (5).png" alt="">
+
+  <script src="/js/javascript.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,127 @@
+body {
+	height: 100%;
+	background-image: url(/casino-background.jpeg);
+	background-repeat: no-repeat;
+	background-size: 1500px 1100px;	
+}
+
+/* top part */
+
+.image-container {
+	display: grid;
+	grid-template-columns: 1fr 200px;
+}
+
+.casino {
+	height: 350px;
+	margin-left: 200px ;
+	margin-top: -30;
+}
+
+.girl {
+	height: 300px;
+	margin-left: -1100px;
+	margin-bottom: 40px;
+}
+
+.girl-2 {
+	height: 250px;
+	margin-left: 1000px;
+}
+
+.wager-container {
+	font-size: 15px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif ;
+	font-weight: bold;
+	margin-left: 50px;
+}
+
+#app {
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	margin-left: 50px;
+	position: relative;
+	margin-top: 70px;
+}
+
+.wheel {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: 5px;
+}
+
+.button-container {
+	margin-left: 500px;
+	margin-top: -270px;
+}
+
+.button {
+	display: block;
+	background-color: none;
+	width: 150px;
+	margin: 10px auto;
+	cursor: pointer;
+	border-radius: 70%;
+  cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+button:active {
+	transform: scale(0.95); 
+  transition: transform 0.2s ease;
+}
+
+.blur {
+	animation: blur 10s;
+}
+
+.black {
+	background-color: black;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
+
+@keyframes blur {
+	0%{
+		filter: blur(0.5px);
+	}
+	30%{
+		filter: blur(1px);
+	}
+	50%{
+		filter: blur(3px);
+	}
+	80%{
+		filter: blur(1.5px);
+	}
+	95%{
+		filter: blur(0px);
+	}
+}
+
+@keyframes buttonPress {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button:active {
+  animation: buttonPress 0.8s ease;
+}
