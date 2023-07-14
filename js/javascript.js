@@ -180,9 +180,9 @@
     spinWheel();
   });
 
-	window.onload = function() {
-		const backgroundMusic = document.getElementById('background-music');
-		backgroundMusic.volume = 0.1; // Set the volume to 50% (adjust as needed)
-		backgroundMusic.play();
-	};
+	// window.onload = function() {
+	// 	const backgroundMusic = document.getElementById('background-music');
+	// 	backgroundMusic.volume = 0.2; // Set the volume to 50% (adjust as needed)
+	// 	backgroundMusic.play();
+	// };
 })();

@@ -2,10 +2,10 @@ body {
 	height: 100%;
 	background-image: url(/casino-background.jpeg);
 	background-repeat: no-repeat;
-	background-size: 1500px 1100px;	
+	background-size: 1500px 1200px;	
 }
 
-/* top part */
+
 
 .image-container {
 	display: grid;
@@ -27,18 +27,20 @@ body {
 .girl-2 {
 	height: 250px;
 	margin-left: 1000px;
+	margin-bottom: -20px;
 }
 
 .wager-container {
-	font-size: 15px;
+	font-size: 17px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif ;
-	font-weight: bold;
 	margin-left: 50px;
+	color: aliceblue;
 }
 
+
 #app {
-	width: 400px;
-	height: 400px;
+	width: 500px;
+	height: 500px;
 	margin: 0 auto;
 	margin-left: 50px;
 	position: relative;
@@ -53,14 +55,14 @@ body {
 }
 
 .button-container {
-	margin-left: 500px;
-	margin-top: -270px;
+	margin-left: 400px;
+	margin-top: -370px;
 }
 
 .button {
 	display: block;
 	background-color: none;
-	width: 150px;
+	height: 200px;
 	margin: 10px auto;
 	cursor: pointer;
 	border-radius: 70%;
@@ -80,16 +82,16 @@ button:active {
 	animation: blur 10s;
 }
 
-.black {
-	background-color: black;
+select option[value="red"] {
+  color: red;
 }
 
-.red {
-	background-color: red;
+select option[value="black"] {
+	columns: black;
 }
 
-.green {
-	background-color: green;
+select option[value="green"] {
+  color: green;
 }
 
 @keyframes blur {
